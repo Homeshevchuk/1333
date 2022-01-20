@@ -1,12 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXLabel?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="org.openjfx.FXMLController">
-    <children>
-        <Button layoutX="126" layoutY="90" onAction="#handleButtonAction" text="Click Me!" />
-        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-    </children>
-</AnchorPane>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="800.0" prefWidth="1280.0" styleClass="mainScene" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MFXButton buttonType="RAISED" depthLevel="LEVEL3" maxHeight="80.0" maxWidth="1.7976931348623157E308" minHeight="80.0" prefHeight="80.0" prefWidth="1280.0" rippleAnimationSpeed="0.5" styleClass="titlebutton" text="CEB Dev Tools" textFill="WHITE" VBox.vgrow="ALWAYS">
+         <font>
+            <Font name="SansSerif Regular" size="40.0" />
+         </font>
+      </MFXButton>
+      <VBox alignment="TOP_CENTER" prefHeight="603.0" prefWidth="1280.0" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER" prefHeight="95.0" prefWidth="1166.0">
+               <children>
+                  <MFXLabel alignment="CENTER_LEFT" labelStyle="STYLE2" maxWidth="231.0" minWidth="210.0" prefHeight="38.0" prefWidth="231.0" text="Active Workspace:">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXComboBox comboStyle="STYLE2" prefHeight="27.0" prefWidth="202.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </MFXComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="95.0" prefWidth="1166.0">
+               <children>
+                  <MFXLabel alignment="CENTER_LEFT" labelStyle="STYLE2" maxWidth="210.0" minWidth="210.0" prefWidth="210.0" text="General Actions:">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="200.0" styleClass="leftButton" text="Deploy Project" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </MFXButton>
+                  <MFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="200.0" styleClass="rightButton" text="Import Project" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </MFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="95.0" prefWidth="1240.0">
+               <children>
+                  <MFXLabel alignment="CENTER_LEFT" labelStyle="STYLE2" maxWidth="210.0" minWidth="210.0" prefWidth="210.0" text="Data Definitions:">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="200.0" styleClass="leftButton" text="Services" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </MFXButton>
+                  <MFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="200.0" styleClass="midButton" text="Queries" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </MFXButton>
+                  <MFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="200.0" styleClass="midButton" text="Exceptions" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </MFXButton>
+                  <MFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="200.0" styleClass="midButton" text="Screens" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </MFXButton>
+                  <MFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="200.0" styleClass="midButton" text="Regions" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </MFXButton>
+                  <MFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="200.0" styleClass="rightButton" text="Popups" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </MFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="95.0" prefWidth="1166.0">
+               <children>
+                  <MFXLabel alignment="CENTER_LEFT" labelStyle="STYLE2" maxWidth="210.0" minWidth="210.0" prefWidth="210.0" text="Pom Operations:">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXButton buttonType="RAISED" depthLevel="LEVEL1" prefHeight="50.0" prefWidth="200.0" styleClass="leftButton" text="Creation" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </MFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="95.0" prefWidth="1166.0">
+               <children>
+                  <MFXLabel labelStyle="STYLE2" maxWidth="210.0" minWidth="210.0" pickOnBounds="false" prefWidth="210.0" text="Configurations:">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="200.0" styleClass="leftButton" text="Workspaces" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </MFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>
